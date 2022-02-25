@@ -402,6 +402,9 @@ div.work-card .project-cover {
   .hero-image__container {
     margin-top: 4.2em;
   }
+  .hero-img {
+    padding: 0;
+  }
   .hero-img .circle1 {
     width: 45px;
     height: 320px;
