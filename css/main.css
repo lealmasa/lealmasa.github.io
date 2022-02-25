@@ -363,6 +363,12 @@ div.work-card .project-cover {
   height: 24px;
 }
 
+p.last-text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 3em 0 .2em;
+}
+
 @media only screen and (min-width: 920px) {
   body {
     font-size: 10px;
@@ -586,11 +592,6 @@ div.work-card .project-cover {
   .contact-form h2 {
     max-width: 810px;
     font-size: 2.1rem;
-  }
-  .last-text {
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 3em 0 .2em;
   }
   .rrss-links {
     display: -webkit-box;

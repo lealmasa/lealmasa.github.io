@@ -306,6 +306,13 @@ div.work-card {
         }
 }
 
+    
+p.last-text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 3em 0 .2em;
+}
+
 
 @media only screen and (min-width: 920px) {
     body {
@@ -538,12 +545,6 @@ div.work-card {
             max-width: 810px;
             font-size: 2.1rem;
         }
-    }
-    
-    .last-text {
-        font-size: 1.2rem;
-        text-align: center;
-        margin: 3em 0 .2em;
     }
 
     .rrss-links {
