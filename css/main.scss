@@ -364,15 +364,43 @@ footer p.last-text {
         .circle1 {
             width: 45px;
             height: 320px;
+            animation: circle1 2.5s ease-in-out infinite alternate;
         }
         .circle2 {
             width: 90px;
             height: 320px;
+            animation: circle2 2.5s ease-in-out infinite alternate;
         }
         .circle3 {
             width: 180px;
             height: 320px;
+            animation: circle3 2.5s ease-in-out infinite alternate;
         }
+    }
+
+    @keyframes circle1 {
+        0% {
+            width: 45px;
+          }
+          100% {
+            width: 180px;  
+          }
+    }
+    @keyframes circle2 {
+        0% {
+            width: 90px;
+          }
+          100% {
+            width: 60px;  
+          }
+    }
+    @keyframes circle3 {
+        0% {
+            width: 180px;
+          }
+          100% {
+            width: 45px;  
+          }
     }
 
     h1 {
@@ -592,5 +620,7 @@ footer p.last-text {
         //     background-size: cover;
         // }
     }
+
+
 
 }

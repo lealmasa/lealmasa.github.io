@@ -415,14 +415,68 @@ footer p.last-text {
   .hero-img .circle1 {
     width: 45px;
     height: 320px;
+    -webkit-animation: circle1 2.5s ease-in-out infinite alternate;
+            animation: circle1 2.5s ease-in-out infinite alternate;
   }
   .hero-img .circle2 {
     width: 90px;
     height: 320px;
+    -webkit-animation: circle2 2.5s ease-in-out infinite alternate;
+            animation: circle2 2.5s ease-in-out infinite alternate;
   }
   .hero-img .circle3 {
     width: 180px;
     height: 320px;
+    -webkit-animation: circle3 2.5s ease-in-out infinite alternate;
+            animation: circle3 2.5s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes circle1 {
+    0% {
+      width: 45px;
+    }
+    100% {
+      width: 180px;
+    }
+  }
+  @keyframes circle1 {
+    0% {
+      width: 45px;
+    }
+    100% {
+      width: 180px;
+    }
+  }
+  @-webkit-keyframes circle2 {
+    0% {
+      width: 90px;
+    }
+    100% {
+      width: 60px;
+    }
+  }
+  @keyframes circle2 {
+    0% {
+      width: 90px;
+    }
+    100% {
+      width: 60px;
+    }
+  }
+  @-webkit-keyframes circle3 {
+    0% {
+      width: 180px;
+    }
+    100% {
+      width: 45px;
+    }
+  }
+  @keyframes circle3 {
+    0% {
+      width: 180px;
+    }
+    100% {
+      width: 45px;
+    }
   }
   h1 {
     font-size: 2.1rem;
