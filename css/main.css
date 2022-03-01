@@ -403,7 +403,7 @@ footer p.last-text {
 }
 
 .hero__project .scroll-down {
-  padding-top: 1em;
+  padding-top: -1em;
 }
 
 .hero-container__proyect {
