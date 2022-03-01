@@ -494,25 +494,27 @@ section.description {
     margin-bottom: 3em;
 }
 
-.desgin-grid {
+.desgin-flex {
     margin: 0 0 12em;
     display: grid;
     grid-template-columns: 1fr 2.3fr;
     gap: 1em;
     grid-template-areas: 
-    'design-pre design-pre'
-    'design-title design-img';
+    'design-desc design-img';
 
+    desing-desc {
+        grid-area: design-desc;
+    }
+    
     .desing__subtitle {
-        grid-area: design-pre;
         font-size: 10rem;
+        line-height: 7rem;
         font-weight: bold;
         opacity: 15%;
-        margin: 0 0 -.6em;
+        margin: 0 0 -.5em;
     }
 
     .design__title {
-        grid-area: design-title;
         font-size: 1.6rem;
         font-weight: bold;
         margin: 0;
@@ -528,8 +530,7 @@ section.description {
 .reverse {
     grid-template-columns: 2.3fr 1fr;
     grid-template-areas: 
-    '. design-pre'
-    'design-img design-title';
+    'design-img design-desc';
 
     .desing__subtitle {
         text-align: end;
