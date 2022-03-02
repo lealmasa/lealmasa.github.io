@@ -353,27 +353,29 @@ footer p.last-text {
 
 // Project page
 .hero__project {
-    min-height: 90vh;
 
     .scroll-down {
-        padding-top: -1em;
+        margin: 0;
     }
 }
 
 .hero-container__proyect {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: .3fr .3fr 1fr;
     gap: 1em;
     grid-template-areas:  
-    'heading hero-img'
-    'heading-sub hero-img';
-    padding: 6.4em 0 0;
+    'heading-sub heading-sub'
+    'heading heading'
+    'hero-img hero-img'
+    ;
+    padding: 1em 0 0;
 
     .hero-img__project {
         grid-area: hero-img;
         max-width: 100%;
         border-radius: 4px;
+        margin-top: 1.2em;
     }
 
     .project__h1 {
@@ -397,17 +399,19 @@ section.description {
 }
 
 .title__description {
-    margin: 1em 0 3em;
+    margin: 1em 0 2em;
 }
 
 .info-grid {
     display: grid;
     grid-template-columns: .5fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 4em;
+    grid-template-rows: .08fr 1fr .08fr .8fr;
+    gap: 2em;
     grid-template-areas: 
-    'overview desc-overview'
-    'background desc-background';
+    'overview overview'
+    'desc-overview desc-overview'
+    'background background'
+    'desc-background desc-background';
 
     .more-info__subtitl {
         font-size: 1.2rem;
@@ -421,7 +425,8 @@ section.description {
     .overview__grid {
         grid-area: desc-overview;
         display: grid;
-        grid-template-columns: .8fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 1.6em;
         grid-template-areas: 
         'desc desc'
         'roles tools'
@@ -430,7 +435,8 @@ section.description {
         .poblem-desc {
             grid-area: desc;
             font-size: 1rem;
-            font-weight: bold;
+            line-height: 1.4rem;
+            opacity: 80%;
             margin: .2em 0 1em;
         }
         
@@ -480,14 +486,19 @@ section.description {
         .project-info__sub-title {
         font-size: 1rem;
         font-weight: bold;
-        margin: .2em 0 1.6em;
+        margin: .2em 0 1.2em;
         }
 
         .project-info__desc {
             font-size: .9rem;
+            line-height: 1.2rem;
             opacity: 80%;
         }
     }
+}
+
+.designs > :last-child {
+    margin: 0 0 6em;
 }
 
 .title__designs {
@@ -495,23 +506,25 @@ section.description {
 }
 
 .desgin-flex {
-    margin: 0 0 12em;
+    margin: 0 0 10em;
     display: grid;
-    grid-template-columns: 1fr 2.3fr;
-    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
     grid-template-areas: 
-    'design-desc design-img';
+    'design-desc design-desc'
+    'design-img design-img';
 
-    desing-desc {
+    .design-desc {
         grid-area: design-desc;
+        z-index: -1;
     }
     
     .desing__subtitle {
-        font-size: 10rem;
-        line-height: 7rem;
+        font-size: 12rem;
+        line-height: 4rem;
         font-weight: bold;
         opacity: 15%;
-        margin: 0 0 -.5em;
+        margin: 0 0 -.3em;
     }
 
     .design__title {
@@ -522,33 +535,32 @@ section.description {
 
     .design__image {
         grid-area: design-img;
-        border-radius: 7px;
+        border-radius: 8px;
         max-width: 100%;
     }
+
 }
-
 .reverse {
-    grid-template-columns: 2.3fr 1fr;
-    grid-template-areas: 
-    'design-img design-desc';
-
+    
     .desing__subtitle {
         text-align: end;
     }
-
-    .design__title {
-        text-align: end;
-    }
 }
 
-.thanks {
-    min-height: 30vh;
-    padding-top: 2em;
 
+.thanks {
+    min-height: 20vh;
+    padding-top: 2em;
+    text-align: center;
+
+    .title__thanks {
+        font-size: 1.2rem;
+    }
     
     .tanks__desc {
         font-size: 1rem;
         line-height: 1.4em;
+        text-align: center;
 
         span {
             color: #DC9DB9;
@@ -578,12 +590,28 @@ footer {
         margin-top: 4em;
     }
 
-    section.about-me {
-        margin-top: 0em;
+ 
+
+    // PRoject section
+
+    .hero__project {
+
+        .scroll-down {
+            padding: 0 0 1em;
+        }
+    }
+    
+    .hero-container__proyect {
+        padding: 2em 0 0;
+        gap:1.6em;
+    }
+
+    .thanks .title__thanks {
+        font-size: 1.4rem;
     }
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 590px) {
     .landing__h1 {
         font-size: 2.8rem;
         margin-top: 0.8em;
@@ -679,6 +707,141 @@ footer {
                 background-size: cover;
             }
      }
+
+// Vains de project page
+    .hero__project {
+
+        .scroll-down {
+        margin-top: 0em;
+        }
+    }
+
+    .hero-container__proyect {
+        display: grid;
+        grid-template-columns: .5fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+        grid-template-areas:  
+        'heading hero-img'
+        'heading-sub hero-img';
+        padding: 6em 0 0;
+
+        .hero-img__project {
+            grid-area: hero-img;
+            margin: 0;
+        }
+
+        .project__h1 {
+            grid-area: heading;
+            margin-right: 1em;
+        }
+
+        .hero_pre-tile {
+            grid-area: heading-sub;
+        }
+    }
+    
+    .info-grid {
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 4em;
+        grid-template-areas: 
+        'overview desc-overview'
+        'background desc-background';
+    
+        
+        .subtitle__overview {
+            grid-area: overview;
+        }
+    
+        .overview__grid {
+            grid-area: desc-overview;
+            grid-template-columns: .8fr 1fr;
+            grid-template-areas: 
+            'desc desc'
+            'roles tools'
+            'time time';
+    
+            .poblem-desc {
+                grid-area: desc;
+                margin: .2em 0 1em;
+            }
+            
+
+            .more-info__div--roles {
+                grid-area: roles;
+            }
+    
+            .more-info__div--tools {
+                grid-area: tools;
+            }
+    
+            .more-info__div--time {
+                grid-area: time;
+            }
+    
+        }
+    
+        .subtitle__background {
+            grid-area: background;
+        }
+    
+        .project-brief {
+            grid-area:desc-background;
+    
+            .project-info__sub-title {
+            margin: .2em 0 1.6em;
+            }
+    
+        }
+    }
+
+    .title__description {
+        margin: 1em 0 3em;
+    }
+
+    .title__designs {
+        margin-bottom: 3em;
+    }
+
+    .designs > :last-child {
+        margin: 0 0 8em;
+    }
+    
+    .desgin-flex {
+        margin: 0 0 14em;
+        grid-template-columns: 1fr 2.3fr;
+        grid-template-areas: 
+        'design-desc design-img';
+    
+        .design-desc {
+            grid-area: design-desc;
+        }
+        
+        .desing__subtitle {
+            font-size: 8rem;
+            line-height: 5rem;
+            margin: 0 0 -.5em;
+        }
+    
+        .design__image {
+            grid-area: design-img;
+        }
+    }
+    
+    .reverse {
+        grid-template-columns: 2.3fr 1fr;
+        grid-template-areas: 
+        'design-img design-desc';
+    
+        .design__title {
+            text-align: end;
+        }
+    }
+
+    .thanks .title__thanks {
+        font-size: 1.6rem;
+    }
 }
 
 
@@ -907,10 +1070,60 @@ footer {
         // }
     }
 
+// Vainas de project pag
+
+    .hero-container__proyect {
+        grid-template-columns: 1fr 1.5fr;
+        margin-top: 4em;
+    }
+
+    .desgin-flex {
+        
+        .desing__subtitle {
+            font-size: 10rem;
+            line-height: 7rem;
+            margin: 0 0 -.5em;
+        }
+
+        .design__title {
+            font-size: 1.6rem;
+        }
 
 
+    }
+    .hero__project {
+
+        .scroll-down {
+        padding-top: 2em;
+        }
+    }
+
+
+
+    
+    .thanks {
+        min-height: 25vh;
+        padding-top: 2em;
+    
+        
+        .tanks__desc {
+            font-size: 1rem;
+            line-height: 1.4em;
+    
+            span {
+                color: #DC9DB9;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    footer {
+        min-height: 10vh;
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    
 }
 
-
-// Voy a estar trabajando despues de esta linea y luego arreglo todo
 
