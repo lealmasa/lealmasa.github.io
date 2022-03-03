@@ -73,6 +73,7 @@ header {
 
 .wrapper {
     padding: 0 2.1em 0;
+    display: block;
 }
 
 .hero-image__container {
@@ -351,19 +352,19 @@ footer p.last-text {
     margin: 3em 0 .2em;
 }
 
-// Project page
+// Project page ui shots
 .hero__project {
 
     .scroll-down {
-        margin: 0;
+        margin: 4em 0 2em;
     }
 }
 
 .hero-container__proyect {
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: .3fr .3fr 1fr;
-    gap: 1em;
+    grid-template-rows: min-content auto;
+    gap: 1.4em;
     grid-template-areas:  
     'heading-sub heading-sub'
     'heading heading'
@@ -375,7 +376,7 @@ footer p.last-text {
         grid-area: hero-img;
         max-width: 100%;
         border-radius: 4px;
-        margin-top: 1.2em;
+        margin-top: .6em;
     }
 
     .project__h1 {
@@ -443,6 +444,7 @@ section.description {
         .more-info__item {
             font-size: .9rem;
             opacity: 80%;
+            margin: 0;
         }
 
         .more-info__div--roles {
@@ -502,7 +504,7 @@ section.description {
 }
 
 .title__designs {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .desgin-flex {
@@ -527,12 +529,6 @@ section.description {
         margin: 0 0 -.3em;
     }
 
-    .design__title {
-        font-size: 1.6rem;
-        font-weight: bold;
-        margin: 0;
-    }
-
     .design__image {
         grid-area: design-img;
         border-radius: 8px;
@@ -547,6 +543,11 @@ section.description {
     }
 }
 
+.design__title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+}
 
 .thanks {
     min-height: 20vh;
@@ -575,6 +576,91 @@ footer {
     margin-top: 4em;
 }
 
+// project p-p
+
+.design-grid__p-p {
+    display: grid;
+    grid-template-rows: min-content auto;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding-top: 1em;
+    grid-template-areas: 
+    'landing'
+    'about-me'
+    'project'
+    'title-mobile'
+    'mobile';
+    
+    .p-p__landing {
+        grid-area: landing;
+    }
+
+    .p-p__about-me {
+        grid-area: about-me;
+        margin: auto;
+    }
+    
+    .p-p__project-page {
+        grid-area: project;
+        
+    }
+
+    .design__title--mobile {
+        grid-area: title-mobile;
+        margin-bottom: 0;
+    }
+    
+    .design-grid__mobile {
+        grid-area: mobile;
+        display: grid;
+        grid-template-rows: min-content auto;
+        grid-template-columns: 1fr 1fr;
+        gap: .6em 2em;
+        justify-content: space-between;
+        grid-template-areas: 
+        'title-mobile title-mobile'
+        'landing__mobile about-me__mobile'
+        'project__mobile about-me__mobile';
+
+        .p-p__landing--mobile {
+            grid-area: landing__mobile;
+            padding-bottom: 4em;
+        }
+
+        .p-p__about-me--mobile {
+            grid-area: about-me__mobile;
+            margin: auto;
+        }
+
+        .p-p__project-page--mobile {
+            grid-area: project__mobile;
+        }
+    }
+    
+    .design-card__p-p {
+        
+        .design__sub-title {
+            font-size: 1.2rem;
+            margin: 1em 0 1.2em;
+            font-weight: bold;
+            opacity: 90%;
+        }
+
+        .p-p__cover {
+            max-width: 100%;
+        }
+    }
+}
+
+
+.space {
+    padding:  0 .08em;
+}
+
+
+
+
+
 @media only screen and (min-width: 390px) {
     h1 {
         font-size: 2rem;
@@ -592,7 +678,7 @@ footer {
 
  
 
-    // PRoject section
+    // Project section
 
     .hero__project {
 
@@ -712,14 +798,14 @@ footer {
     .hero__project {
 
         .scroll-down {
-        margin-top: 0em;
+        margin-top: 2em;
         }
     }
 
     .hero-container__proyect {
         display: grid;
         grid-template-columns: .5fr 2fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: min-content auto;
         gap: 1em;
         grid-template-areas:  
         'heading hero-img'
@@ -841,6 +927,76 @@ footer {
 
     .thanks .title__thanks {
         font-size: 1.6rem;
+    }
+
+    // p-p
+    
+    .design-grid__p-p {
+        display: grid;
+        grid-template-rows: min-content auto;
+        grid-template-columns: 1fr 1fr;
+        gap: 6em 4em;
+        padding-top: 2.4em;
+        grid-template-areas: 
+        'landing about-me'
+        'project about-me'
+        'title-mobile title-mobile'
+        'mobile mobile';
+        
+        .p-p__landing {
+            grid-area: landing;
+            margin-bottom: 6em;
+        }
+    
+        .p-p__about-me {
+            grid-area: about-me;
+            margin: auto;
+        }
+        
+        .p-p__project-page {
+            grid-area: project;
+            
+        }
+    
+        .design__title--mobile {
+            grid-area: title-mobile;
+        }
+        
+        .design-grid__mobile {
+            grid-area: mobile;
+            display: grid;
+            gap: 2.4em 0;
+            justify-content: space-between;
+            grid-template-areas: 
+            'title-mobile title-mobile title-mobile'
+            'landing__mobile about-me__mobile project__mobile';
+    
+            .p-p__landing--mobile {
+                grid-area: landing__mobile;
+            }
+    
+            .p-p__landing--about-me {
+                grid-area: about-me__mobile;
+            }
+    
+            .p-p__landing--project-page {
+                grid-area: project__mobile;
+            }
+        }
+        
+        .design-card__p-p {
+            
+            .design__sub-title {
+                font-size: 1.2rem;
+                margin-bottom: 1.2em;
+                font-weight: bold;
+                opacity: 90%;
+            }
+    
+            .p-p__cover {
+                max-width: 100%;
+            }
+        }
     }
 }
 
