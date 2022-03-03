@@ -356,7 +356,7 @@ footer p.last-text {
 .hero__project {
 
     .scroll-down {
-        margin: 4em 0 2em;
+        margin: 8em 0 2em;
     }
 }
 
@@ -975,11 +975,12 @@ footer {
                 grid-area: landing__mobile;
             }
     
-            .p-p__landing--about-me {
+            .p-p__about-me--mobile {
                 grid-area: about-me__mobile;
+                margin: 0;
             }
     
-            .p-p__landing--project-page {
+            .p-p__project-page--mobile {
                 grid-area: project__mobile;
             }
         }

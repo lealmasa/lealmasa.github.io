@@ -400,7 +400,7 @@ footer p.last-text {
 }
 
 .hero__project .scroll-down {
-  margin: 4em 0 2em;
+  margin: 8em 0 2em;
 }
 
 .hero-container__proyect {
@@ -1044,12 +1044,13 @@ footer {
     -ms-grid-column: 1;
     grid-area: landing__mobile;
   }
-  .design-grid__p-p .design-grid__mobile .p-p__landing--about-me {
+  .design-grid__p-p .design-grid__mobile .p-p__about-me--mobile {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: about-me__mobile;
+    margin: 0;
   }
-  .design-grid__p-p .design-grid__mobile .p-p__landing--project-page {
+  .design-grid__p-p .design-grid__mobile .p-p__project-page--mobile {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: project__mobile;
