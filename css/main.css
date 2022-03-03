@@ -439,7 +439,7 @@ footer p.last-text {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: heading-sub;
-  margin: 0;
+  margin: -2em 0 0;
   font-size: 1.6em;
   font-style: italic;
   opacity: 70%;
@@ -584,7 +584,7 @@ section.description {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 2em;
+  gap: 2em 0em;
       grid-template-areas: 'design-desc design-desc' 'design-img design-img';
 }
 

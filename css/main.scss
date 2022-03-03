@@ -386,7 +386,7 @@ footer p.last-text {
 
     .hero_pre-tile {
         grid-area: heading-sub;
-        margin: 0;
+        margin: -2em 0 0;
         font-size: 1.6em;
         font-style: italic;
         opacity: 70%;
@@ -511,7 +511,7 @@ section.description {
     margin: 0 0 10em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2em;
+    gap: 2em 0em;
     grid-template-areas: 
     'design-desc design-desc'
     'design-img design-img';
