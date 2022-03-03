@@ -905,12 +905,16 @@ footer {
     .designs > :last-child {
         margin: 0 0 8em;
     }
+
+
+    
     
     .desgin-flex {
         margin: 0 0 10em;
         grid-template-columns: 1fr 2.3fr;
         grid-template-areas: 
         'design-desc design-img';
+
     
         .design-desc {
             grid-area: design-desc;
@@ -1035,10 +1039,13 @@ footer {
             }
         }
     }
+    
+    .hero {
+        animation: moveDown 1s ease-in-out forwards;
+    }
 
     .hero-image__container {
-        margin-top: 4.2em;
-
+        margin-top: 2.2em;
     }
 
     .hero-img {
@@ -1086,9 +1093,20 @@ footer {
           }
     }
 
+    @keyframes moveDown {
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
     .landing__h1 {
         font-size: 2.1rem;
-        margin-top: 2.1em;
+        margin-top: 2.6em;
         line-height: 2.8rem;
         margin-bottom: 3.6em;
     }
@@ -1262,6 +1280,7 @@ footer {
 
     }
     .hero__project {
+        animation: moveDown 1s ease-in-out forwards;
 
         .scroll-down {
         padding-top: 2em;

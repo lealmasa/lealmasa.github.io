@@ -1092,8 +1092,12 @@ footer {
   header .nav-links a {
     font-size: 1rem;
   }
+  .hero {
+    -webkit-animation: moveDown 1s ease-in-out forwards;
+            animation: moveDown 1s ease-in-out forwards;
+  }
   .hero-image__container {
-    margin-top: 4.2em;
+    margin-top: 2.2em;
   }
   .hero-img {
     padding: 0;
@@ -1164,9 +1168,33 @@ footer {
       width: 45px;
     }
   }
+  @-webkit-keyframes moveDown {
+    from {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes moveDown {
+    from {
+      -webkit-transform: translateY(-100px);
+              transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
   .landing__h1 {
     font-size: 2.1rem;
-    margin-top: 2.1em;
+    margin-top: 2.6em;
     line-height: 2.8rem;
     margin-bottom: 3.6em;
   }
@@ -1301,6 +1329,10 @@ footer {
   }
   .desgin-flex .design__title {
     font-size: 1.6rem;
+  }
+  .hero__project {
+    -webkit-animation: moveDown 1s ease-in-out forwards;
+            animation: moveDown 1s ease-in-out forwards;
   }
   .hero__project .scroll-down {
     padding-top: 2em;
