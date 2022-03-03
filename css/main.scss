@@ -386,7 +386,7 @@ footer p.last-text {
 
     .hero_pre-tile {
         grid-area: heading-sub;
-        margin: -2em 0 0;
+        margin: 0;
         font-size: 1.6em;
         font-style: italic;
         opacity: 70%;
@@ -798,14 +798,14 @@ footer {
     .hero__project {
 
         .scroll-down {
-        margin-top: 2em;
+        margin-top: 5em;
         }
     }
 
     .hero-container__proyect {
         display: grid;
         grid-template-columns: .5fr 2fr;
-        grid-template-rows: min-content auto;
+        grid-template-rows: .7fr .3fr;
         gap: 1em;
         grid-template-areas:  
         'heading hero-img'
@@ -965,8 +965,8 @@ footer {
         .design-grid__mobile {
             grid-area: mobile;
             display: grid;
-            gap: 2.4em 0;
-            justify-content: space-between;
+            grid-template-columns: auto auto auto;
+            gap: 2.4em 4em;
             grid-template-areas: 
             'title-mobile title-mobile title-mobile'
             'landing__mobile about-me__mobile project__mobile';
