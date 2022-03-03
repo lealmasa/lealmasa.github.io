@@ -673,13 +673,13 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: about-me;
-  margin: auto;
 }
 
 .design-grid__p-p .p-p__project-page {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: project;
+  margin-bottom: 2em;
 }
 
 .design-grid__p-p .design__title--mobile {
