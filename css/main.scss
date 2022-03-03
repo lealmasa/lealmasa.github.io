@@ -977,11 +977,12 @@ footer {
     
             .p-p__about-me--mobile {
                 grid-area: about-me__mobile;
-                margin: 0;
+                margin: auto 0;
             }
     
             .p-p__project-page--mobile {
                 grid-area: project__mobile;
+                margin-block-start: 32em;
             }
         }
         

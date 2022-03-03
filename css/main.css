@@ -1046,12 +1046,14 @@ footer {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: about-me__mobile;
-    margin: 0;
+    margin: auto 0;
   }
   .design-grid__p-p .design-grid__mobile .p-p__project-page--mobile {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
     grid-area: project__mobile;
+    -webkit-margin-before: 32em;
+            margin-block-start: 32em;
   }
   .design-grid__p-p .design-card__p-p .design__sub-title {
     font-size: 1.2rem;
