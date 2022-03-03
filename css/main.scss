@@ -69,6 +69,13 @@ header {
         font-weight: bold;
         font-size: 1.2rem;
     }
+
+    .buttn-back {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: .4em;
+    }
 }
 
 .wrapper {
@@ -85,7 +92,7 @@ header {
         display: flex;
         position: absolute;
         z-index: -1;
-        padding: 1em 0 0;
+        padding: 2em 0 0;
     
         .circle1 {
             background-color: #0416BC;
@@ -129,7 +136,7 @@ header {
 .scroll-down {
     display: flex;
     align-items: center;
-    margin-top: 3.2em;
+    margin-top: 4em;
     
     .scroll-down__icon {
         background-color: #0416BC;
@@ -223,7 +230,7 @@ div.work-card {
         p.desc {
             font-size: .9rem;
             margin: .4em 0;
-            line-height: 1.2rem;
+            line-height: 1.25rem;
             opacity: 90%;
         }
         
@@ -318,7 +325,7 @@ div.work-card {
         display: flex;
         gap: 5em;
         list-style-type: none;
-        padding: .8em 0  0;
+        padding: .8em 0  .8em;
         margin:0;
         height: 100%;
         width: 100%;
@@ -356,7 +363,7 @@ footer p.last-text {
 .hero__project {
 
     .scroll-down {
-        margin: 8em 0 2em;
+        margin: 4.2em 0 2em;
     }
 }
 
@@ -395,12 +402,12 @@ footer p.last-text {
 }
 
 section.description {
-    padding-top: 4em;
+    padding-top: 8em;
     margin-bottom: 2em;
 }
 
 .title__description {
-    margin: 1em 0 2em;
+    margin: 0 0 2em;
 }
 
 .info-grid {
@@ -438,7 +445,7 @@ section.description {
             font-size: 1rem;
             line-height: 1.4rem;
             opacity: 80%;
-            margin: .2em 0 1em;
+            margin: .1em 0 1em;
         }
         
         .more-info__item {
@@ -499,12 +506,16 @@ section.description {
     }
 }
 
+section.designs {
+    padding-top: 8em;
+}
+
 .designs > :last-child {
     margin: 0 0 6em;
 }
 
 .title__designs {
-    margin-bottom: 2em;
+    margin: 0 0 1.6em;
 }
 
 .desgin-flex {
@@ -759,7 +770,7 @@ footer {
             p.desc {
                 font-size: 1rem;
                 margin: .8em .8em 0 0;
-                line-height: 1.4rem;
+                line-height: 1.2rem;
                 padding-right: 1.4m;
                 opacity: 95%;
             }
@@ -798,14 +809,14 @@ footer {
     .hero__project {
 
         .scroll-down {
-        margin-top: 5em;
+        margin-top: 7em;
         }
     }
 
     .hero-container__proyect {
         display: grid;
         grid-template-columns: .5fr 2fr;
-        grid-template-rows: .7fr .3fr;
+        grid-template-rows: .6fr .3fr;
         gap: 1em;
         grid-template-areas:  
         'heading hero-img'
@@ -829,7 +840,7 @@ footer {
     
     .info-grid {
         grid-template-columns: .5fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr min-content;
         gap: 4em;
         grid-template-areas: 
         'overview desc-overview'
@@ -850,7 +861,7 @@ footer {
     
             .poblem-desc {
                 grid-area: desc;
-                margin: .2em 0 1em;
+                margin: 0em 0 1em;
             }
             
 
@@ -883,19 +894,20 @@ footer {
     }
 
     .title__description {
-        margin: 1em 0 3em;
+        margin: 0 0 3em;
     }
 
     .title__designs {
-        margin-bottom: 3em;
+        margin: 0 0 2.4em;
     }
+
 
     .designs > :last-child {
         margin: 0 0 8em;
     }
     
     .desgin-flex {
-        margin: 0 0 14em;
+        margin: 0 0 10em;
         grid-template-columns: 1fr 2.3fr;
         grid-template-areas: 
         'design-desc design-img';
@@ -930,7 +942,7 @@ footer {
     }
 
     // p-p
-    
+
     .design-grid__p-p {
         display: grid;
         grid-template-rows: min-content auto;
